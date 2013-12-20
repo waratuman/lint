@@ -1,3 +1,5 @@
 = Lint
 
-This project rocks and uses MIT-LICENSE.
+This project provides a rake task (`rake assets:lint`) for linting JavaScript files for Rails
+applications.
+
