@@ -5,7 +5,7 @@ namespace :assets do
   desc 'Run JSLint'
   task :lint do
      Rails.configuration.assets
-     files = Rails.configuration.assets.map { |dir| Dir.glob(File.join(dir, '**', '*.js')) }
+     files = Rails.configuration.assets.paths.map { |dir| Dir.glob(File.join(dir, '**', '*.js')) }
 
     files.each do |file|
       print '%-75s ' % file[Rails.root.to_s.length..-1]
